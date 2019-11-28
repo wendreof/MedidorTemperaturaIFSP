@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dp"
+    android:id="@+id/Linear"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/conectar"
+        android:layout_width="200dp"
+        android:checked="false"
+        android:textSize="20sp"
+        android:theme="@style/SwitchTheme"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnMedirTemperatura"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Medir Temperatura"/>
+
+        <Button
+            android:id="@+id/btnConfig"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Configurações"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/edtTxtResultadoMedicao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBackground"
+        android:padding="20dp" />
+</LinearLayout>
